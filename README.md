@@ -1,15 +1,13 @@
 
-# codeZone-courses-manager 🚀
+## codeZone-courses-manager 🚀
 
 A simple and powerful Command Line Interface (CLI) tool to manage courses (add, remove, update, and list) and store them locally in a JSON file. Built with **Node.js** using **Commander** and **Inquirer**.
 
----
 
 ## 🛠️ Prerequisites
 
 Make sure you have **Node.js** installed on your machine (a version that supports ESM Modules) before getting started.
 
----
 
 ## 📦 Installation
 
@@ -23,7 +21,6 @@ npm install commander inquirer
 
 3. Make sure to add `"type": "module"` to your `package.json` file to ensure ES Modules run successfully.
 
----
 
 ## 🚀 Usage
 
