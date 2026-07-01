@@ -1,0 +1,19 @@
+{
+  "name": "codezone-cli",
+  "version": "1.0.4",
+  "description": "",
+  "license": "ISC",
+  "author": "fares fahmy",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "inquirer": "^14.0.2"
+  },
+  "bin": {
+    "codezone-cli": "./index.js"
+  }
+}
