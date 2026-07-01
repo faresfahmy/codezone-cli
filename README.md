@@ -1,30 +1,47 @@
 
-## codeZone-courses-manager 🚀
+# codeZone-courses-manager 🚀
 
 A simple and powerful Command Line Interface (CLI) tool to manage courses (add, remove, update, and list) and store them locally in a JSON file. Built with **Node.js** using **Commander** and **Inquirer**.
 
+---
 
 ## 🛠️ Prerequisites
 
 Make sure you have **Node.js** installed on your machine (a version that supports ESM Modules) before getting started.
 
+---
 
 ## 📦 Installation
 
-1. Download the project files or copy the code into your workspace directory.
-2. Install the required dependencies by running the following command in your terminal:
+You can install this CLI tool globally or locally via **npm**:
 
+### Global Installation (Recommended for CLI tools)
 ```bash
-npm install commander inquirer
+npm install -g codezone-cli
 
 ```
 
-3. Make sure to add `"type": "module"` to your `package.json` file to ensure ES Modules run successfully.
+### Local Installation
 
+```bash
+npm install codezone-cli
+
+```
+
+> 💡 **Note:** If installed locally, make sure to add `"type": "module"` to your `package.json` file to ensure ES Modules run successfully.
+
+---
 
 ## 🚀 Usage
 
-You can run the tool directly using `node` followed by your file name and the desired command:
+If installed **globally**, you can run the tool directly using its name:
+
+```bash
+codezone-cli [command]
+
+```
+
+If installed **locally**, run it using `node`:
 
 ```bash
 node index.js [command]
@@ -35,19 +52,19 @@ node index.js [command]
 
 | Command | Alias | Description | Example Usage |
 | --- | --- | --- | --- |
-| `list` | `l` | Display all available courses in a formatted table. | `node index.js list` |
-| `add` | `a` | Add a new course (interactive prompts for title and price). | `node index.js add` |
-| `remove` | `r` | Delete a specific course by its title. | `node index.js remove "NodeJS"` |
-| `update` | `u` | Update the price of an existing course by its title. | `node index.js update "NodeJS" --price 150` |
+| `list` | `l` | Display all available courses in a formatted table. | `codezone-cli list` |
+| `add` | `a` | Add a new course (interactive prompts for title and price). | `codezone-cli add` |
+| `remove` | `r` | Delete a specific course by its title. | `codezone-cli remove "NodeJS"` |
+| `update` | `u` | Update the price of an existing course by its title. | `codezone-cli update "NodeJS" --price 150` |
 
 ---
 
-## 💡 Examples
+## 💡 Examples (Global Usage)
 
 ### 1. List Available Courses:
 
 ```bash
-node index.js l
+codezone-cli l
 
 ```
 
@@ -56,7 +73,7 @@ node index.js l
 ### 2. Add a New Course:
 
 ```bash
-node index.js a
+codezone-cli a
 
 ```
 
@@ -72,14 +89,14 @@ Add Course Done
 ### 3. Update a Course Price:
 
 ```bash
-node index.js update "ReactJS" --price 120
+codezone-cli update "ReactJS" --price 120
 
 ```
 
 ### 4. Remove a Course:
 
 ```bash
-node index.js r "ReactJS"
+codezone-cli r "ReactJS"
 
 ```
 
@@ -87,7 +104,7 @@ node index.js r "ReactJS"
 
 ## 📂 Data Storage
 
-The tool automatically saves data to a file named `courses.json` in the root directory of the project. The data structure looks like this:
+The tool automatically saves data to a file named `courses.json` in the directory where the command is executed. The data structure looks like this:
 
 ```json
 [
@@ -99,3 +116,6 @@ The tool automatically saves data to a file named `courses.json` in the root dir
 
 ```
 
+```
+
+```
