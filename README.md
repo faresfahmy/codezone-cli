@@ -1,5 +1,5 @@
 
-# codeZone-courses-manager 🚀
+# codezone-cli 🚀
 
 A simple and powerful Command Line Interface (CLI) tool to manage courses (add, remove, update, and list) and store them locally in a JSON file. Built with **Node.js** using **Commander** and **Inquirer**.
 
@@ -113,9 +113,5 @@ The tool automatically saves data to a file named `courses.json` in the director
     "price": 120
   }
 ]
-
-```
-
-```
 
 ```
